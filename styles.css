@@ -1,0 +1,135 @@
+.container {
+    padding: 5rem;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+
+.box {
+    width: 100px;
+    height: 100px;
+    align-items: center;
+    font-size: 10px;
+    font-weight: bold;
+}
+
+
+
+/* Bounce Animation */
+@keyframes bounce {
+    0%, 20%, 50%, 80%, 100% {
+      transform: translateY(0);
+    }
+    40% {
+      transform: translateY(-30px);
+    }
+    60% {
+      transform: translateY(-15px);
+    }
+  }
+  
+  .bounce-text {
+    display: inline-block;
+    font-size: 24px;
+    font-weight: bold;
+    color: #3498db;
+    animation: bounce 2s infinite;
+  }
+  
+  /* Fade In Animation */
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+  
+  .fade-in-text {
+    animation: fadeIn 2s ease-in-out;
+  }
+  
+  /* Tada Animation */
+  @keyframes tada {
+    0% {
+      transform: scale(1);
+    }
+    10%, 20% {
+      transform: scale(0.9) rotate(-3deg);
+    }
+    30%, 50%, 70%, 90% {
+      transform: scale(1.1) rotate(3deg);
+    }
+    40%, 60% {
+      transform: scale(1.15) rotate(-3deg);
+    }
+    80% {
+      transform: scale(1.1) rotate(3deg);
+    }
+    100% {
+      transform: scale(1);
+    }
+  }
+  
+  .tada-text {
+    animation: tada 1s ease-in-out;
+  }
+  
+  /* Heartbeat Animation */
+  @keyframes heartbeat {
+    0% {
+      transform: scale(1);
+    }
+    20% {
+      transform: scale(1.1);
+    }
+    40% {
+      transform: scale(1);
+    }
+    60% {
+      transform: scale(1.1);
+    }
+    80% {
+      transform: scale(1);
+    }
+    100% {
+      transform: scale(1);
+    }
+  }
+  
+  .heartbeat-text {
+    animation: heartbeat 1.5s ease-in-out infinite;
+  }
+  
+  /* Handshake Animation */
+  @keyframes handshake {
+    0%, 100% {
+      transform: rotate(0deg);
+    }
+    50% {
+      transform: rotate(15deg);
+    }
+  }
+  
+  .handshake-text {
+    display: inline-block;
+    animation: handshake 1s ease-in-out infinite;
+  }
+  
+  /* Zoom In Animation */
+  @keyframes zoomIn {
+    from {
+      transform: scale(0.5);
+      opacity: 0;
+    }
+    to {
+      transform: scale(1);
+      opacity: 1;
+    }
+  }
+  
+  .zoomin-text {
+    animation: zoomIn 1s ease-in-out;
+  }
+  
